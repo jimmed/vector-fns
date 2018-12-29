@@ -1,8 +1,8 @@
-import { Vector3D } from "./types";
+import { Vector } from "./types";
 
-export const crossProduct = (
-  [a1, a2, a3]: Vector3D,
-  [b1, b2, b3]: Vector3D
-): Vector3D =>
+export const crossProduct = <T extends number>(
+  [a1, a2, a3]: Vector<T>,
+  [b1, b2, b3]: Vector<T>
+): Vector<T> =>
   // @ts-ignore
-  [(a2 - a3) * b3, b1 - a1 * b3, b2 - a2 * b1];
+  [a2 * b3 - a3 * b2, -(a1 * b3 - a3 * b1), a1 * b2 - a2 * b1];

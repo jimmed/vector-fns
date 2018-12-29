@@ -3,7 +3,7 @@ import { zero } from "../zero";
 
 describe("scalarMultiply", () => {
   describe("when called with a 0D vector", () => {
-    const v = [];
+    const v: number[] = [];
 
     it("should return a 0D vector", () =>
       expect(scalarMultiply(v, 10)).toBe(v));

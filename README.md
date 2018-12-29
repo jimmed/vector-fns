@@ -23,12 +23,12 @@ npm install vector-fns
 You can import the entire library and destructure what you need, like so:
 
 ```js
-import { add, lessThan } from "vector-fns";
+import { add, crossProduct } from "vector-fns";
 ```
 
 or you can pick what you want:
 
 ```js
-import add from "vector-fns/dist/add";
-import lessThan from "vector-fns/dist/lessThan";
+import { add } from "vector-fns/lib/add";
+import { crossProduct } from "vector-fns/lib/crossProduct";
 ```

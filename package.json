@@ -1,11 +1,14 @@
 {
   "name": "vector-fns",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Jim O'Brien <jim@jimmed.net>",
-  "license": "MIT",
+  "author": "Jim O'Brien <npm+vector-fns@jimmed.net>",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "license": "WTFPL",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "prepublishOnly": "yarn run build"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
